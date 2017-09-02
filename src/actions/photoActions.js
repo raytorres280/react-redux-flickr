@@ -1,3 +1,7 @@
+import axios from 'axios';
+import $ from 'jquery';
+import jsonp from 'jsonp';
+
 export function searchWithTags(tags) {
 	console.log('searching for tag.');
 	let photos = null;
@@ -14,4 +18,42 @@ export function searchWithTags(tags) {
 		.catch((err) => {
 			console.log(err);
 		});
+}
+
+export function getPhotosSuccess(photos) {
+	return { type: 'GET_PHOTOS_SUCCESS', photos };
+}
+
+export function getPhotosByTag(tags) {
+	return function(dispatch) {
+		// fetch('https://api.flickr.com/services/feeds/photos_public.gne?tags=' + tags + '&format=json', {
+		// 	headers: {
+		// 		'Access-Control-Allow-Origin': '*',
+		// 	},
+		// 	mode: 'cors'
+		// })
+		// 	.then((res) => {
+		// 	console.log(res);
+		// 	return res.jsonFlickrFeed;
+		// 	})
+		// 	.then((res) => {
+		// 		console.log(res);
+		// 		dispatch(getPhotosSuccess(res));
+		// 		// return { type: 'SEARCH_WITH_TAGS', payload: res};
+		// 	})
+		// 	.catch((err) => {
+		// 		console.log(err);
+		// 	});
+
+		let flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+		$.getJSON( flickerAPI, {
+			tags: tags,
+			format: "json"
+		})
+			.done(function(res) {
+				console.log(res);
+				dispatch(getPhotosSuccess(res.items));
+						// return { type: 'SEARCH_WITH_TAGS', payload: res};
+			})
+	};
 }

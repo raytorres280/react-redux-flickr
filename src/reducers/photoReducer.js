@@ -1,9 +1,8 @@
 export default function photoReducer(state = [], action) {
 	switch(action.type) {
-		case 'SEARCH_WITH_TAGS':
-			state.push(this.state);
-			return [...state,
-				Object.assign({}, action.payload)];
+		case 'GET_PHOTOS_SUCCESS':
+			console.log('action found in reducer');
+			return Object.assign({}, state, action.photos);
 		default:
 			return state;
 	}

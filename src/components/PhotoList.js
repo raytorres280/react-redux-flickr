@@ -25,9 +25,10 @@ class PhotoList extends React.Component {
 }
 
 function mapStateToProps(state, ownProps) {
-	return {
-		courses: state.photos
-	};
+	let newState = {photos: state.photos};
+	console.log(newState);
+	return newState;
 }
+
 
 export default connect(mapStateToProps)(PhotoList);

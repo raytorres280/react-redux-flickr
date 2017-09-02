@@ -32,7 +32,7 @@ class SearchBar extends React.Component {
 				<h1>{this.state.searchField}</h1>
 				<button
 					className="btn btn-info"
-					onClick={() => this.props.dispatch(photoActions.searchWithTags(this.state.searchField))}
+					onClick={() => this.props.dispatch(photoActions.getPhotosByTag(this.state.searchField))}
 				>Search</button>
 			</div>
 		);
