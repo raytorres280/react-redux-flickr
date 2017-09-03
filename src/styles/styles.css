@@ -2,8 +2,6 @@
 #app {
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #4d4d4d;
-    min-width: 550px;
-    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -13,4 +11,17 @@ a.active {
 
 nav {
     padding-top: 20px;
+}
+
+div.card {
+    border-radius: .28571429rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #FAFAFA;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+img.card-photo {
+    margin-bottom: 40px;
 }
