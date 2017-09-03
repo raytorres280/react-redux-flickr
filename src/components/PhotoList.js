@@ -18,9 +18,16 @@ class PhotoList extends React.Component {
 
 	photoGrid() {
 		const photos = this.state.photos.slice();
-		const gridItems = photos.map((photo) => (<div className="col-lg-2 col-md-4 col-sm-12">
-								<div className="card"><img className="card-photo" src={photo.media.m} /></div>
-							</div>));
+		const gridItems = photos.map((photo) => (
+			<div className="col-lg-2 col-md-4 col-sm-12">
+				<div className="card">
+					<img className="card-photo" src={photo.media.m} />
+					<text>
+						{photo.title}
+					</text>
+				</div>
+			</div>
+		));
 
 		let grid = <div></div>;
 		let gridRows = [];
