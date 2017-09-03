@@ -5,7 +5,6 @@ class App extends React.Component {
     render() {
         return (
             <div className="jumbotron">
-                <Header/>
                 {this.props.children}
             </div>
         );

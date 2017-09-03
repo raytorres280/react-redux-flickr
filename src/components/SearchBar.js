@@ -9,37 +9,30 @@ class SearchBar extends React.Component {
 		this.state = {
 			searchField: ''
 		};
+
+		this.onClickSearch = this.onClickSearch.bind(this);
+		this.onChangeText = this.onChangeText.bind(this);
 	}
 
-	// updateSearchField = (event) => {
-	// 	let searchField = null;
-	// 	if (event) {
-	// 		searchField = event.target.value;
-	// 	}
-	// 	this.setState({searchField: searchField});
-	// }
+	onChangeText(event) {
+		this.setState({searchField: event.target.value});
+	}
 
-	// onClickSearch = () => {
-	// 	this.props.dispatch(photoActions.searchWithTags(this.state.searchField));
-	// }
-
-	//why am i getting syntax errors for these functions^?
+	onClickSearch() {
+		this.props.dispatch(photoActions.getPhotosByTag(this.state.searchField));
+	}
 
 	render() {
 		return (
 			<div>
-				<input type="text" onChange={(event) => this.setState({searchField: event.target.value})} value={this.state.searchField}/>
+				<input type="text" onChange={this.onChangeText} value={this.state.searchField}/>
 				<button
 					className="btn btn-info"
-					onClick={() => this.props.dispatch(photoActions.getPhotosByTag(this.state.searchField))}
+					onClick={this.onClickSearch}
 				>Search</button>
 			</div>
 		);
 	}
 }
 
-function mapStateToProps(state, ownProps) {
-}
-
-
-export default connect(mapStateToProps)(SearchBar);
+export default connect()(SearchBar);
