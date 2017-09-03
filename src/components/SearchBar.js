@@ -29,6 +29,7 @@ class SearchBar extends React.Component {
 		return (
 			<div>
 				<input type="text" onChange={(event) => this.setState({searchField: event.target.value})} value={this.state.searchField}/>
+				<h1>{this.state.searchField}</h1>
 				<button
 					className="btn btn-info"
 					onClick={() => this.props.dispatch(photoActions.getPhotosByTag(this.state.searchField))}
