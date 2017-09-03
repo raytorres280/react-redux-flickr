@@ -1,6 +1,4 @@
-import axios from 'axios';
 import $ from 'jquery';
-import jsonp from 'jsonp';
 
 export function searchWithTags(tags) {
 	console.log('searching for tag.');

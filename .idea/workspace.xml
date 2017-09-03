@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e95a7eae-a640-49f2-950a-48e9b9a2194b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PhotoList.js" afterPath="$PROJECT_DIR$/src/components/PhotoList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/styles.css" afterPath="$PROJECT_DIR$/src/styles/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/photoActions.js" afterPath="$PROJECT_DIR$/src/actions/photoActions.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,14 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photoActions.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="photoActions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/actions/photoActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="154">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PhotoList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/PhotoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
-              <caret line="75" column="51" lean-forward="false" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
+            <state relative-caret-position="88">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -89,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -143,10 +141,10 @@
         <option value="$PROJECT_DIR$/src/store/configureStore.js" />
         <option value="$PROJECT_DIR$/src/components/SearchBar.js" />
         <option value="$PROJECT_DIR$/src/api/photoApi.js" />
-        <option value="$PROJECT_DIR$/src/actions/photoActions.js" />
         <option value="$PROJECT_DIR$/src/reducers/photoReducer.js" />
         <option value="$PROJECT_DIR$/src/styles/styles.css" />
         <option value="$PROJECT_DIR$/src/components/PhotoList.js" />
+        <option value="$PROJECT_DIR$/src/actions/photoActions.js" />
       </list>
     </option>
   </component>
@@ -282,12 +280,12 @@
       <workItem from="1504197961379" duration="1917000" />
       <workItem from="1504199911929" duration="4428000" />
       <workItem from="1504233784657" duration="5053000" />
-      <workItem from="1504244398669" duration="33424000" />
+      <workItem from="1504244398669" duration="33541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44822000" />
+    <option name="totallyTimeSpent" value="44939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1720" y="22" width="1720" height="1342" extended-state="0" />
@@ -615,16 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/photoActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/api/photoApi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -688,18 +676,26 @@
     <entry file="file://$PROJECT_DIR$/src/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PhotoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="75" column="51" lean-forward="false" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
+        <state relative-caret-position="88">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/photoActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
